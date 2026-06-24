@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Combinar Reserva - Sítio das Lhamas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- topbar -->
+    <section class="topbar bg-dark py-2 border-bottom border-dark">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0 text-white">
+                    Entre em contato para reservas: <a href="tel:+5548991262230" class="text-white text-decoration-none">+55 48 9 9126-2230</a>
+                </p>
+                <p class="mb-0">
+                    <a href="#" class="text-decoration-none text-white">Anitápolis, SC</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- header -->
+    <section class="header">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.jpg" class="img-fluid logo" alt="Sítio das Lhamas">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-4"><a class="nav-link text-dark" href="index.html">Início</a></li>
+                        <li class="nav-item ms-4"><a class="nav-link text-dark" href="about.html">Sobre Nós</a></li>
+                        <li class="nav-item ms-4"><a class="nav-link text-dark" href="rooms.html">Acomodações</a></li>
+                        <li class="nav-item ms-4"><a class="nav-link text-dark active" href="reservation.html">Reservas</a></li>
+                        <li class="nav-item ms-4"><a class="nav-link text-dark" href="contact.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- combinar reserva -->
+    <section class="checkout py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="text-uppercase ls-3">Combinar Reserva</h2>
+                <p class="text-muted">Preencha os dados e entre em contato pelo WhatsApp ou reserve pelo Airbnb</p>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <!-- coluna da imagem -->
+                <div class="col-md-5 p-4">
+                    <div class="card border-0">
+                        <!-- TROQUE img/lhama-checkout.jpg pela foto que você quiser -->
+                        <img src="img/lhama2.jpg" class="card-img-top rounded" alt="Sítio das Lhamas" style="object-fit: cover; max-height: 340px;">
+                        <div class="card-body px-0 pt-3">
+                            <h5 class="fw-bold">Sítio das Lhamas</h5>
+                            <p class="text-muted mb-1"><i class="fa fa-map-marker-alt me-2"></i>Anitápolis, SC — Serra Catarinense</p>
+                            <p class="text-muted mb-1"><i class="fa fa-phone me-2"></i>+55 48 9 9126-2230</p>
+                            <p class="text-muted mb-0"><i class="fab fa-whatsapp me-2 text-success"></i>Atendimento via WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <!-- bloco Airbnb -->
+                    <div class="mt-4 p-3 rounded" style="background-color: #fff5f5; border: 1px solid #ffcdd2;">
+                        <p class="mb-2 fw-bold" style="color: #FF5A5F;">
+                            <i class="fab fa-airbnb me-2"></i>Reserve também pelo Airbnb
+                        </p>
+                        <p class="text-muted small mb-3">Chalé das Lhamas disponível na plataforma com fotos, avaliações e reserva garantida.</p>
+                        <a href="https://www.airbnb.com.br/rooms/1546504410491967372" target="_blank" class="btn w-100 fw-bold text-white" style="background-color: #FF5A5F;">
+                            <i class="fab fa-airbnb me-2"></i>Ver no Airbnb
+                        </a>
+                    </div>
+                </div>
+
+                <!-- coluna do formulário -->
+                <div class="col-md-6 p-4">
+                    <div class="card border-0 shadow-sm p-4 rounded">
+                        <h5 class="fw-bold mb-4">Dados para contato</h5>
+
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-semibold">Seu nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Como podemos te chamar?">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="acomodacao" class="form-label fw-semibold">Acomodação desejada</label>
+                            <select class="form-select" id="acomodacao">
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="Casa das Lhamas">Casa das Lhamas — R$ 100/diária (até 6 pessoas)</option>
+                                <option value="Casa das Alpacas">Casa das Alpacas — R$ 100/diária (até 6 pessoas)</option>
+                                <option value="Área de Camping">Área de Camping — R$ 50/diária (10+ pessoas)</option>
+                                <option value="Pesque e Pague">Pesque e Pague — consultar valores</option>
+                                <option value="Passeio de Cavalo">Passeio de Cavalo — consultar valores</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="checkin" class="form-label fw-semibold">Check-in</label>
+                                    <input type="date" class="form-control" id="checkin">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="checkout2" class="form-label fw-semibold">Check-out</label>
+                                    <input type="date" class="form-control" id="checkout2">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="hospedes" class="form-label fw-semibold">Número de hóspedes</label>
+                            <input type="number" class="form-control" id="hospedes" min="1" max="20" placeholder="Ex: 4">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="obs" class="form-label fw-semibold">Observações <span class="text-muted fw-normal">(opcional)</span></label>
+                            <textarea class="form-control" id="obs" rows="3" placeholder="Alguma informação extra? Pets, necessidades especiais..."></textarea>
+                        </div>
+
+                        <!-- botão WhatsApp -->
+                        <button onclick="enviarWhatsApp()" class="btn w-100 fw-bold text-white mb-3" style="background-color: #25D366; font-size: 1rem; padding: 12px;">
+                            <i class="fab fa-whatsapp me-2"></i>Enviar pelo WhatsApp
+                        </button>
+
+                        <p class="text-center text-muted small">
+                            Ao clicar, você será redirecionado para o WhatsApp com os dados preenchidos automaticamente.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/sitiodaslhamas?utm_source=qr&igsh=MTBieGNzdDZoN3Nyaw%3D%3D" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/5548991262230" target="_blank" role="button"><i class="fab fa-whatsapp"></i></a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 Todos os direitos reservados:
+            <a class="text-white" href="index.html">Sítio das Lhamas</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function enviarWhatsApp() {
+            const nome       = document.getElementById('nome').value.trim();
+            const acomodacao = document.getElementById('acomodacao').value;
+            const checkin    = document.getElementById('checkin').value;
+            const checkout2  = document.getElementById('checkout2').value;
+            const hospedes   = document.getElementById('hospedes').value;
+            const obs        = document.getElementById('obs').value.trim();
+
+            if (!nome || !acomodacao || !checkin || !checkout2 || !hospedes) {
+                alert('Por favor, preencha todos os campos obrigatórios antes de enviar.');
+                return;
+            }
+
+            // formata datas
+            function formatarData(data) {
+                if (!data) return '—';
+                const [ano, mes, dia] = data.split('-');
+                return `${dia}/${mes}/${ano}`;
+            }
+
+            let mensagem = `Olá! Gostaria de fazer uma reserva no Sítio das Lhamas.%0A%0A`;
+            mensagem += `*Nome:* ${nome}%0A`;
+            mensagem += `*Acomodação:* ${acomodacao}%0A`;
+            mensagem += `*Check-in:* ${formatarData(checkin)}%0A`;
+            mensagem += `*Check-out:* ${formatarData(checkout2)}%0A`;
+            mensagem += `*Hóspedes:* ${hospedes}%0A`;
+            if (obs) mensagem += `*Observações:* ${obs}%0A`;
+
+            const numero = '5548991262230';
+            window.open(`https://wa.me/${numero}?text=${mensagem}`, '_blank');
+        }
+    </script>
+
+</body>
+</html>
